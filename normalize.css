@@ -1,6 +1,3 @@
-Вот полный код с добавленными и измененными стилями:
-
-```css
 /* Нормализация стилей */
 body {
   background-image: url('images/loon-image-original.jpg');
@@ -109,6 +106,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  appearance: button; /* Added standard property for compatibility */
 }
 
 button::-moz-focus-inner,
@@ -160,6 +158,7 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield; /* Added standard property for compatibility */
   outline-offset: -2px;
 }
 
@@ -169,6 +168,7 @@ textarea {
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  appearance: button; /* Added standard property for compatibility */
   font: inherit;
 }
 
@@ -201,4 +201,6 @@ svg {
   fill: currentColor;
 }
 
-details summary::-webkit-details
+details summary::-webkit-details {
+  -webkit-appearance: none; /* Added standard property for compatibility */
+}
