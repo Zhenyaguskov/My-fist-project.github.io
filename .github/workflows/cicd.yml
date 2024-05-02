@@ -29,4 +29,7 @@ jobs:
     - name: Пройти проверки HTML5 Validator
       uses: Cyb3r-Jak3/html5validator-action@v1.0.0
       with:
-        root: /
+        files: |
+          index.html
+          about.html
+          contact.html
